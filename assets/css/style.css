@@ -1,0 +1,53 @@
+nav{
+    text-align: center;   
+    margin: 20px;
+    padding: 5px;
+    color: azure;
+}
+
+a:link{
+    color:azure;
+}
+a:hover{
+    color:rgba(40, 174, 236, 0.842);
+}
+a:visited{
+    color: azure;
+}
+a:active{
+    color: azure;
+}
+
+body{
+    background-color: rgb(240, 240, 240);
+    font-family: 'Open Sans';
+    
+}
+#nav_h1{
+    background-image: url('../img/fondo.jpg');
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    
+    color:azure;
+}
+
+footer{
+    text-align: center;
+}
+
+#imagenes{
+    text-align: center;
+}
+
+.div_lorem{
+    width: 50%;
+    float: left;
+}
+.div_lorem p {
+    padding: 50px
+}
+
