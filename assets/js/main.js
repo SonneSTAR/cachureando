@@ -15,3 +15,7 @@ const year = date.getFullYear();
 const dateModified = `${dateset}/${month}/${year}`;
 
 contenedor.innerHTML = `<p><strong>La fecha actual es ${dateModified} con ${time} minutos<strong/></p>`
+
+$(document).ready( function () {
+  $('#table_id').DataTable();
+} );
