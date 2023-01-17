@@ -41,6 +41,7 @@ footer{
 
 #imagenes{
     text-align: center;
+
 }
 
 .div_lorem{
@@ -51,3 +52,12 @@ footer{
     padding: 50px
 }
 
+.card{
+    width: 18rem;
+    transition: width 0.3s ease-in-out;
+}
+
+.evento:hover{
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
