@@ -1,54 +1,49 @@
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl);
-})
+$(document).ready(function () {
+  
 
 
-let contenedor = document.getElementById('contenedor');
 
-const date = new Date();
-const time = `${date.getHours()}:${date.getMinutes()}`
-const dateset = ('0' + date.getDate()).slice(-2);
-const month = ('0' + (date.getMonth() + 1)).slice(-2);
-const year = date.getFullYear();
+  let contenedor = $('#contenedor');
 
-const dateModified = `${dateset}/${month}/${year}`;
+  const date = new Date();
+  const time = `${date.getHours()}:${date.getMinutes()}`
+  const dateset = ('0' + date.getDate()).slice(-2);
+  const month = ('0' + (date.getMonth() + 1)).slice(-2);
+  const year = date.getFullYear();
 
-contenedor.innerHTML = `<p><strong>La fecha actual es ${dateModified} con ${time} minutos<strong/></p>`;
+  const dateModified = `${dateset}/${month}/${year}`;
+
+  contenedor.html(`}<p><strong>La fecha actual es ${dateModified} con ${time} minutos<strong/></p>`);
+
+  let calificacion_change = $('#calificacion_change');
+
+  let MiVariable = $('#notaPagina');
+  
+
+  MiVariable.change(function () {
+    if (MiVariable.val() >= 0 && MiVariable.val() <= 3) {
+      calificacion_change.html('Muy Deficiente');
+    }
+    if (MiVariable.val() > 3 && MiVariable.val() < 5) {
+      calificacion_change.html('Insuficiente');
+    }
+    if (MiVariable.val() >= 5 && MiVariable.val() <= 6) {
+      calificacion_change.html('Suficiente');
+    }
+    if (MiVariable.val() > 6 && MiVariable.val() < 7) {
+      calificacion_change.html('Bien');
+    }
+    if (MiVariable.val() > 7 && MiVariable.val() < 9) {
+      calificacion_change.html('Notable');
+    }
+    if (MiVariable.val() >= 9 && MiVariable.val() <= 10) {
+      calificacion_change.html('Sobresaliente');
+    }
+  });
 
 
-let evento = document.getElementsByClassName('evento');
-let carrito = document.getElementById('carrito');
-let card1 = document.getElementsByClassName('card-text1').value;
-let calificacion = document.getElementById('calificacion');
+});
 
-calificacion.addEventListener('click', ()=>{
-  console.log('a')
-  if(calificacion >= 0 && calificacion <= 3){
-    console.log(nota)
-    alert('Deficiente')
-  }
-})
-
-evento[0].addEventListener('click', () =>{
-  console.log(card1)
-  carrito.innerHTML = `<tr>
-  <td>${card1}</td>
-  <td>1.000</td>
-  </tr>`
-})
-evento[1].addEventListener('click', () =>{
-  console.log('asd')
-  alert('hola')
-})
-evento[2].addEventListener('click', () =>{
-  console.log('asd')
-  alert('hola')
-})
-
-$(document).ready( function () {
-  $('#table_id').DataTable();
-} ); 
 
 
 

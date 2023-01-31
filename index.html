@@ -7,35 +7,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cachureanding</title>
+    <title>Cachureando</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.js" integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-          <h5 class="text-white h4">
-            <p><a style="text-decoration: none;" href="./contacto.html">Contacto</a></p>
-            <P>Acerca de nosotros</P>
-            <p>Productos</p>
-            
-          </h5>
-          <span class="text-muted">Toggleable via the navbar brand.</span>
+    <nav class="fade-in navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="">CACHUREANDO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>   
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto">
+              <a class="nav-link" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+
+    <div id="carouselExampleSlidesOnly" class="fade-in carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/fondo.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/mercado-vino-kilo-1024x768.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/mercadillo_central_park_0.jpg" class="d-block w-100" alt="...">
+          </div>
         </div>
       </div>
-      <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </nav>
+
+      
+
+
     
-    <section id="nav_h1">
-        <h1>Cachureando</h1>
-    
-    </section>
+      
 
     <div class="container">
         <div class="row text-center">
@@ -49,16 +63,25 @@
             <div class="row">
                 <section>
                     <div>
-                        <span>Somos la empresa lider en "cachureos", en nuestra tienda puedes encontrar de todo. Estamos en calle santiago 1234. Para contactos y preguntas, revisa la opcion "Contacto" mas arriba.</span>
+                        <div class="card mx-auto" style="width: 40rem;">
+                            <div class="card-body">
+                              <p class="card-text">En Cachureando nos hemos preocupado de mantener una gran variedad de “Cachureos”, ofrecemos herramientas para la construcción, juguetes, ropa, zapatos, lo que te imagines ¡lo tenemos! y si no, escribenos y pronto lo tendremos.</p>
+                            </div>
+                        </div>
+                        
                     </div>
                 </section>
                 <br><br>
                 <section>
                     <div class="div_lorem">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A saepe illum ad odit eos voluptatem, laborum iure distinctio officiis ipsa veritatis qui similique, at architecto enim eum, libero.</p>
+                        <p>Somos la empresa líder en venta de “cachureos” desde el año 2010, siempre nos hemos preocupado de ofrecer la mejor de las atenciones. 
+                            En nuestro equipo contamos con el personal mejor capacitado para asegurarnos de tener respuestas rápidas y así mantener un buen flujo y conversación tienda/cliente.
+                            Por el momento no contamos con una tienda física pero siéntete libre de navegar por nuestra vasta cantidad de productos.</p>
                     </div>
                     <div class="div_lorem">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod mollitia esse asperiores dolore sapiente, cum commodi accusantium ad accusamus magni sint quibusdam. Omnis quae nesciunt inventore iste deleniti? Sed, ex?</p>
+                        <p>Detrás de Cachureando se encuentra un equipo de gente alegre y unida y nos importa mucho la opinión de nuestra distinguida clientela por eso, al final de esta página se encuentra nuestro selector de calidad, no te olvides de evaluarnos, si te ha gustado o si no, para así nosotros poder mejorar para seguir ofreciendo el mejor de los servicios.
+                            Recuerda que en Contacto, puedes escribirnos, también puedes enviarnos sugerencias para la mejora de nuestra imagen.
+                            Sin más que decir, se despide el equipo de Cachureando. ¡Feliz compra!</p>
                     </div>
                 </section>
             </div>
@@ -67,26 +90,29 @@
         <div class="container p-4">
             <div class="row ">
                 <div class="col-12 col-md-4">
-                    <div class="card evento">
+                    <div id="card2" class="card evento">
                         <img src="assets/img/WINGER.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <input class="card-text1" type="text" value="prueba">prueba.</input>
+                            <P>Tornillo</P>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                       </div>   
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="card evento">
+                    <div id="card3" class="card evento">
                         <img src="assets/img/1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
+                        <P>Zapato</P>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                       </div>
 
                 </div>
                 <div class="col-12 col-md-4">
-                      <div class="card evento">
+                      <div id="card4" class="card evento">
                         <img src="assets/img/2000373774179_2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
+                            <P>Cama</P>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. </p>
                         </div>
                       </div>
@@ -101,43 +127,34 @@
                     <div class="card-body">
                         <h3>Te ha gustado la pagina web?</h3>
                         <label for="calificacion">Calificanos, de 0 a 10, siendo 10 la nota maxima</label>
-                        <select class="notaPagina calificacion" aria-label="Default select example" name="calificacion" id="calificacion">
+                        <select id="notaPagina" class="notaPagina calificacion" aria-label="Default select example" name="calificacion" id="calificacion">
                             <option selected>--Selecciona tu calificacion--</option>
                             
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                            <option value="">4</option>
-                            <option value="">5</option>
-                            <option value="">6</option>
-                            <option value="">7</option>
-                            <option value="">8</option>
-                            <option value="">9</option>
-                            <option value="">10</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
                         </select>
                     </div>
                   </div>
 
             </div>
         </div>
+
+        <div class="text-center">
+            <h3 id="calificacion_change"></h3>
+        </div>
         
     </main>
     <br>
-    <div class="container pb-4">
-        <div class="row">
-            <table id="table_id" class="display">
-                <thead>
-                    <tr>
-                        <th>Producto</th>
-                        <th>Precio</th>
-                    </tr>
-                </thead>
-                <tbody id="carrito">
-                    
-                </tbody>
-            </table>
-        </div>
-    </div>
+
+      
 
     <footer class="bg-dark p-2">
         <div class="text-white">
@@ -146,18 +163,11 @@
         </div>
     </footer>
 
-<<<<<<< HEAD
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-=======
-    
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
->>>>>>> 2e9c553a8161ca28a0f9aae890c79140ddfa57a1
     <script src="assets/js/main.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
+
 </body>
 </html>
